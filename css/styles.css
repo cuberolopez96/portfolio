@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+    position:relative;
+    overflow: hidden;
+}
+.banner-background{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 998;
+}
+.dark-background{
+    background: rgba(0,0,0,0.7);
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: 999;
+}
+.profile{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    display: flex;
+}
+.avatar{
+    width: 60%;
+    border-radius: 10em;
+    overflow: hidden;
+    align-self: center;
+}
+.avatar img{
+    width: 100%;
+}
+.profile{
+    font-family: 'Roboto Light', sans-serif;
+    padding: 1em 0;
+    color:white;
+    display: flex;
+    flex-direction: column;
+}
+.profile-name{
+    padding: 1em 0;
+
+}
+.profile-name{
+    text-align: center;
+}
+.profile-social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1em 0;
+}
+.profile-social a{
+    width: 50px;
+    display: inline-block;
+    padding: 0 1em;
+
+}
+.profile-social a img{
+    width: 100%;
+}
+.column{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1em 0;
+}
+.section {
+    width: 90%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+}
+.section .title{
+    font-family: "Roboto Light",sans-serif;
+    align-self: center;
+}
+.section .logo{
+    align-self: center;
+}
+.section .content{
+    padding: 1em 0;
+    align-self: center;
+}
+.section .content ul li{
+    padding: 1em 0;
+}
+
+@media screen and (min-width: 900px){
+   .banner-background{
+       width: 100%;
+       height: auto;
+   }
+    .column{
+        width: 95%;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .section{
+        width: 32%;
+        margin: 1em 0;
+    }
+}
